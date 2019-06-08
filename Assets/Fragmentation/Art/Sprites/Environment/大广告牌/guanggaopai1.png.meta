@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: c8105868d54e1d1498b9efb9f4a7b6da
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: guanggaopai1_0
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 6
+  spritePivot: {x: 0, y: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: 1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guanggaopai1_0
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 4
+        width: 1117
+        height: 1697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c6fc7ecc519804689f79e2dab9f55a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: 558.21893, y: -52.734375}
+      - {x: 560.4167, y: -50.53711}
+      - {x: 560.4167, y: 70.3125}
+      - {x: 558.21893, y: 72.509766}
+      - {x: 541.73615, y: 72.509766}
+      - {x: 539.5384, y: 70.3125}
+      - {x: 539.5384, y: 62.62207}
+      - {x: 535.143, y: 62.62207}
+      - {x: 535.143, y: 575.6836}
+      - {x: 532.94525, y: 577.88086}
+      - {x: -538.4396, y: 577.88086}
+      - {x: -540.63727, y: 575.6836}
+      - {x: -540.63727, y: 71.41113}
+      - {x: -541.73615, y: 72.509766}
+      - {x: -558.21893, y: 72.509766}
+      - {x: -560.4167, y: 70.3125}
+      - {x: -560.4167, y: -50.53711}
+      - {x: -558.21893, y: -52.734375}
+      - {x: -54.94281, y: -52.734375}
+      - {x: -54.94281, y: -1120.6055}
+      - {x: -52.7451, y: -1122.8027}
+      - {x: 18.680555, y: -1122.8027}
+      - {x: 20.87827, y: -1120.6055}
+      - {x: 20.87827, y: -52.734375}
+    - - {x: -538.4396, y: 36.254883}
+      - {x: -451.6299, y: 36.254883}
+      - {x: -451.6299, y: -26.367188}
+      - {x: -538.4396, y: -26.367188}
+    - - {x: -428.55392, y: 36.254883}
+      - {x: -426.3562, y: 29.663086}
+      - {x: -423.05966, y: 26.367188}
+      - {x: -341.7443, y: 26.367188}
+      - {x: -341.7443, y: -26.367188}
+      - {x: -428.55392, y: -26.367188}
+    - - {x: -318.6683, y: 26.367188}
+      - {x: -291.1969, y: 26.367188}
+      - {x: -291.1969, y: -26.367188}
+      - {x: -318.6683, y: -26.367188}
+    - - {x: -263.7255, y: 26.367188}
+      - {x: -231.85866, y: 26.367188}
+      - {x: -231.85866, y: -26.367188}
+      - {x: -263.7255, y: -26.367188}
+    - - {x: -208.78268, y: 26.367188}
+      - {x: -121.97304, y: 26.367188}
+      - {x: -121.97304, y: -26.367188}
+      - {x: -208.78268, y: -26.367188}
+    - - {x: -98.897064, y: 26.367188}
+      - {x: -91.20507, y: 26.367188}
+      - {x: -91.20507, y: -26.367188}
+      - {x: -98.897064, y: -26.367188}
+    - - {x: -63.73366, y: 26.367188}
+      - {x: -12.087419, y: 26.367188}
+      - {x: -12.087419, y: -26.367188}
+      - {x: -63.73366, y: -26.367188}
+    - - {x: 12.087419, y: 26.367188}
+      - {x: 78.01879, y: 26.367188}
+      - {x: 78.01879, y: -26.367188}
+      - {x: 12.087419, y: -26.367188}
+    - - {x: 121.97304, y: 26.367188}
+      - {x: 208.78268, y: 26.367188}
+      - {x: 208.78268, y: -26.367188}
+      - {x: 121.97304, y: -26.367188}
+    - - {x: 231.85866, y: 26.367188}
+      - {x: 278.01062, y: 26.367188}
+      - {x: 278.01062, y: -26.367188}
+      - {x: 231.85866, y: -26.367188}
+    - - {x: 306.5809, y: 26.367188}
+      - {x: 318.6683, y: 26.367188}
+      - {x: 318.6683, y: -26.367188}
+      - {x: 306.5809, y: -26.367188}
+    - - {x: 341.7443, y: 26.367188}
+      - {x: 423.05966, y: 26.367188}
+      - {x: 426.3562, y: 29.663086}
+      - {x: 428.55392, y: 36.254883}
+      - {x: 428.55392, y: -26.367188}
+      - {x: 341.7443, y: -26.367188}
+    - - {x: 451.6299, y: 36.254883}
+      - {x: 538.4396, y: 36.254883}
+      - {x: 538.4396, y: -26.367188}
+      - {x: 451.6299, y: -26.367188}
+    physicsShape: []
+    bones: []
+    spriteID: eb7dce99d17cc644887115795d657ee3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

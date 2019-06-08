@@ -1,0 +1,603 @@
+fileFormatVersion: 2
+guid: ffb8e07e87dcbc8438e4a50a9feb698b
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: wall-Recovered_0
+    21300002: wall-Recovered_1
+    21300004: wall-Recovered_2
+    21300006: wall-Recovered_3
+    21300008: wall-Recovered_4
+    21300010: wall-Recovered_5
+    21300012: wall-Recovered_6
+    21300014: wall-Recovered_7
+    21300016: wall-Recovered_8
+    21300018: wall-Recovered_9
+    21300020: wall-Recovered_10
+    21300022: wall-Recovered_11
+    21300024: wall-Recovered_12
+    21300026: wall-Recovered_13
+    21300028: wall-Recovered_14
+    21300030: wall-Recovered_15
+    21300032: wall-Recovered_16
+    21300034: wall-Recovered_17
+    21300036: wall-Recovered_18
+    21300038: wall-Recovered_19
+    21300040: wall-Recovered_20
+    21300042: wall-Recovered_21
+    21300044: wall-Recovered_22
+    21300046: wall-Recovered_23
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wall-Recovered_0
+      rect:
+        serializedVersion: 2
+        x: 4623
+        y: 4697
+        width: 954
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a5704501fc8fc4a86a058ac013f1ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_1
+      rect:
+        serializedVersion: 2
+        x: 5682
+        y: 4701
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14fbd05660510184cbd8311d450a9120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_2
+      rect:
+        serializedVersion: 2
+        x: 6693
+        y: 4714
+        width: 953
+        height: 1042
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86598791c923c7747a4cd676f1af31f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_3
+      rect:
+        serializedVersion: 2
+        x: 7901
+        y: 4618
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa539aad511d4b64991cb548fa92b868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_4
+      rect:
+        serializedVersion: 2
+        x: 4526
+        y: 3577
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9dd6db3ed1c2c4b9df705c1e020b2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_5
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 3563
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09cb0d180c47dc499f1db757c0bc6b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_6
+      rect:
+        serializedVersion: 2
+        x: 6715
+        y: 3554
+        width: 958
+        height: 1042
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08f1ce1d15be734d978d0aa5a0be43e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_7
+      rect:
+        serializedVersion: 2
+        x: 7893
+        y: 3493
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1083cd0d5bf7eba40941cda4e6edbf83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_8
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 1428
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77850467473e233408ea5b450e8a3e83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_9
+      rect:
+        serializedVersion: 2
+        x: 4526
+        y: 2447
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ed6fa1b19d0f499eca5aa4fcb51c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_10
+      rect:
+        serializedVersion: 2
+        x: 5691
+        y: 2443
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab61a2c035fb0e48a5b28044722aadb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_11
+      rect:
+        serializedVersion: 2
+        x: 6741
+        y: 2438
+        width: 1011
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfe41251e0ca1c43bab2a844dc781e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_12
+      rect:
+        serializedVersion: 2
+        x: 7866
+        y: 2377
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d18068d842d214eba18e9781750af0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_13
+      rect:
+        serializedVersion: 2
+        x: 4531
+        y: 1309
+        width: 958
+        height: 1042
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1febf62e9a5e643aec0f77545ab4ef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_14
+      rect:
+        serializedVersion: 2
+        x: 5682
+        y: 1305
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71dd39b94e914b5448061e34681365f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_15
+      rect:
+        serializedVersion: 2
+        x: 6741
+        y: 1305
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f4d465a6b34cc44928bd007950ab5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_16
+      rect:
+        serializedVersion: 2
+        x: 7853
+        y: 1265
+        width: 954
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0caa7ada3e9194948892056e63c86e2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_17
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 198
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994a4e5f17d8e9b40be097adde5cf774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_18
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 158
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98921fed747ec3e4886964112b9c96c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_19
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 176
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9acde55dd9d421949a507313448236a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_20
+      rect:
+        serializedVersion: 2
+        x: 4535
+        y: 158
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0945ca2931f9a34aa6807ecbbe11ed9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_21
+      rect:
+        serializedVersion: 2
+        x: 5687
+        y: 198
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf3c6e5e1eddc34e9de64b259183a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_22
+      rect:
+        serializedVersion: 2
+        x: 6719
+        y: 202
+        width: 958
+        height: 1037
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ef762cfaae1524eb994bb3dbbe2705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall-Recovered_23
+      rect:
+        serializedVersion: 2
+        x: 7840
+        y: 207
+        width: 958
+        height: 1036
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45106a53dae06634abbd7470415ff27b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6749b2d67ec174541bf88e545ca38491
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
