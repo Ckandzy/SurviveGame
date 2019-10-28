@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242e86f6e45bf164db9aa7a9fdc0dae8, type: 3}
+  m_Name: Pea
+  m_EditorClassIdentifier: 
+  ItemDropInScene: {fileID: 2164204415690996009, guid: 9ac3792b7be1eae4fb3c4a54875d6f95,
+    type: 3}
+  id: 1246c2acc3a7d9c4bb958cc40d1edc7a
+  ItemName: "\u8C4C\u8C46"
+  ItemIntroduction: "\u8C4C\u8C46"
+  Icon: {fileID: 21300030, guid: 136de26b83c2ffd46b0b970f76841bda, type: 3}
+  MaximumStacks: 99
+  IsConsumable: 1
+  Effects: []

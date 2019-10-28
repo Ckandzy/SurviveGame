@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242e86f6e45bf164db9aa7a9fdc0dae8, type: 3}
+  m_Name: Potato
+  m_EditorClassIdentifier: 
+  ItemDropInScene: {fileID: 2164204415690996009, guid: 9ac3792b7be1eae4fb3c4a54875d6f95,
+    type: 3}
+  id: 57149700d14c2934c87829e4be990837
+  ItemName: "\u571F\u8C46"
+  ItemIntroduction: "\u571F\u8C46"
+  Icon: {fileID: 21300006, guid: dfe657078a9772b49ae30a766346d9e5, type: 3}
+  MaximumStacks: 99
+  IsConsumable: 1
+  Effects: []

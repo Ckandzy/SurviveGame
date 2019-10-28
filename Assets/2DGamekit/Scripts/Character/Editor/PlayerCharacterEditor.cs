@@ -182,10 +182,10 @@ namespace Gamekit2D
             {
                 EditorGUILayout.PropertyField(m_SpriteRendererProp, m_SpriteRendererContent);
                 EditorGUILayout.PropertyField(m_DamageableProp, m_DamageableContent);
-                //EditorGUILayout.PropertyField(m_MeleeDamagerProp, m_MeleeDamagerContent);
-                //EditorGUILayout.PropertyField(m_FacingLeftBulletSpawnPointProp, m_FacingLeftBulletSpawnPointContent);
-                //EditorGUILayout.PropertyField(m_FacingRightBulletSpawnPointProp, m_FacingRightBulletSpawnPointContent);
-                //EditorGUILayout.PropertyField(m_BulletPoolProp, m_BulletPoolContent);
+                EditorGUILayout.PropertyField(m_MeleeDamagerProp, m_MeleeDamagerContent);
+                EditorGUILayout.PropertyField(m_FacingLeftBulletSpawnPointProp, m_FacingLeftBulletSpawnPointContent);
+                EditorGUILayout.PropertyField(m_FacingRightBulletSpawnPointProp, m_FacingRightBulletSpawnPointContent);
+                EditorGUILayout.PropertyField(m_BulletPoolProp, m_BulletPoolContent);
                 EditorGUILayout.PropertyField(m_CameraFollowTargetProp, m_CameraFollowTargetContent);
             }
 

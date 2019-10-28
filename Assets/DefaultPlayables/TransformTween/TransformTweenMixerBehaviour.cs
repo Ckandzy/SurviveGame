@@ -38,10 +38,11 @@ public class TransformTweenMixerBehaviour : PlayableBehaviour
             {
                 input.startingPosition = defaultPosition;
                 input.startingRotation = defaultRotation;
+                m_FirstFrameHappened = true;
             }
 
-            float normalisedTime = (float)(playableInput.GetTime() / playableInput.GetDuration ());
-            float tweenProgress = input.EvaluateCurrentCurve(normalisedTime);
+            float normalisedTime = (float)(playableInput.GetTime() * input.inverseDuration);
+            float tweenProgress = input.currentCurve.Evaluate(normalisedTime);
 
             if (input.tweenPosition)
             {
@@ -74,13 +75,6 @@ public class TransformTweenMixerBehaviour : PlayableBehaviour
 
         trackBinding.position = blendedPosition;
         trackBinding.rotation = blendedRotation;
-        
-        m_FirstFrameHappened = true;
-    }
-
-    public override void OnPlayableDestroy (Playable playable)
-    {
-        m_FirstFrameHappened = false;
     }
 
     static Quaternion AddQuaternions (Quaternion first, Quaternion second)

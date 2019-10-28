@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31f098b1f861fd94bb6f09f84fe87404, type: 3}
+  m_Name: Rabbit Meat
+  m_EditorClassIdentifier: 
+  itemDropInSceneOBJ: {fileID: 2164204415690996009, guid: 719bbb03f76f1754f9d90f388320451a,
+    type: 3}
+  id: 6b4fd01efbbbe5f4c95b2af44939cfdb
+  ItemName: "\u5154\u5B50\u8089"
+  ItemIntroduction: "\u751F\u7684\u5154\u5B50\u8089"
+  Icon: {fileID: 21300000, guid: da984a523f905fe4f95918aaa958b1c5, type: 3}
+  MaximumStacks: 99

@@ -16,9 +16,19 @@ namespace Gamekit2D
         { }
 
         //call that from inside the onDamageableHIt or OnNonDamageableHit to get what was hit.
-        public Collider2D LastHit { get { return m_LastHit; } }
+        public Collider2D LastHit { get { return _lastHit; } }
 
-        public int damage = 1;
+        public float Damage
+        {
+            get
+            {
+                if (_character != null)
+                    _damage = _character.statDamage.Value;
+                return _damage;
+            }
+        }
+        [SerializeField]
+        private float _damage;
         [Tooltip("攻击范围指示框的偏移量")]
         public Vector2 offset = new Vector2(1.5f, 1f);
         [Tooltip("攻击范围指示框的大小")]
@@ -33,7 +43,7 @@ namespace Gamekit2D
         [Tooltip("If disabled, damager ignore trigger when casting for damage 如果关闭，投掷攻击将会忽略触发器")]
         public bool canHitTriggers;
         public bool disableDamageAfterHit = false;
-        //be forced to 被迫。。。 in addition to 除了。。。
+        //be forced to 被迫 in addition to 除此之外
         [Tooltip("If set, the player will be forced to respawn to latest checkpoint in addition to loosing life")]
         public bool forceRespawn = false;
         [Tooltip("If set, an invincible damageable hit will still get the onHit message (but won't lose any life) 如果开启，无敌状态的被攻击对象仍然能接收到onHit消息，但不会损失生命")]
@@ -43,24 +53,32 @@ namespace Gamekit2D
         public NonDamagableEvent OnNonDamageableHit;
 
         //Sprite初始翻转状态
-        protected bool m_SpriteOriginallyFlipped;
-        protected bool m_CanDamage = true;
-        protected ContactFilter2D m_AttackContactFilter;
-        protected Collider2D[] m_AttackOverlapResults = new Collider2D[10];
-        protected Transform m_DamagerTransform;
-        protected Collider2D m_LastHit;
+        protected bool _spriteOriginallyFlipped;
+        protected bool _canDamage = true;
+        protected ContactFilter2D _attackContactFilter;
+        protected Collider2D[] _attackOverlapResults = new Collider2D[10];
+        protected Transform _damagerTransform;
+        protected Collider2D _lastHit;
+        protected Character _character;
 
+
+        private void OnValidate()
+        {
+            if (_character == null)
+                _character = GetComponent<Character>();
+        }
 
         void Awake()
         {
-            m_AttackContactFilter.layerMask = hittableLayers;
-            m_AttackContactFilter.useLayerMask = true;
-            m_AttackContactFilter.useTriggers = canHitTriggers;
+            _attackContactFilter.layerMask = hittableLayers;
+            _attackContactFilter.useLayerMask = true;
+            _attackContactFilter.useTriggers = canHitTriggers;
 
             if (offsetBasedOnSpriteFacing && spriteRenderer != null)
-                m_SpriteOriginallyFlipped = spriteRenderer.flipX;
+                _spriteOriginallyFlipped = spriteRenderer.flipX;
 
-            m_DamagerTransform = transform;
+            _damagerTransform = transform;
+            _character = GetComponent<Character>();
         }
 
         /// <summary>
@@ -68,7 +86,7 @@ namespace Gamekit2D
         /// </summary>
         public void EnableDamage()
         {
-            m_CanDamage = true;
+            _canDamage = true;
         }
 
         /// <summary>
@@ -76,32 +94,32 @@ namespace Gamekit2D
         /// </summary>
         public void DisableDamage()
         {
-            m_CanDamage = false;
+            _canDamage = false;
         }
 
         void FixedUpdate()
         {
-            if (!m_CanDamage)
+            if (!_canDamage)
                 return;
 
-            Vector2 scale = m_DamagerTransform.lossyScale;
+            Vector2 scale = _damagerTransform.lossyScale;
 
             Vector2 facingOffset = Vector2.Scale(offset, scale);
-            if (offsetBasedOnSpriteFacing && spriteRenderer != null && spriteRenderer.flipX != m_SpriteOriginallyFlipped)
+            if (offsetBasedOnSpriteFacing && spriteRenderer != null && spriteRenderer.flipX != _spriteOriginallyFlipped)
                 facingOffset = new Vector2(-offset.x * scale.x, offset.y * scale.y);
 
             Vector2 scaledSize = Vector2.Scale(size, scale);
 
             //点A,B分别是攻击范围指示框的左下和右上点
-            Vector2 pointA = (Vector2)m_DamagerTransform.position + facingOffset - scaledSize * 0.5f;
+            Vector2 pointA = (Vector2)_damagerTransform.position + facingOffset - scaledSize * 0.5f;
             Vector2 pointB = pointA + scaledSize;
 
-            int hitCount = Physics2D.OverlapArea(pointA, pointB, m_AttackContactFilter, m_AttackOverlapResults);
+            int hitCount = Physics2D.OverlapArea(pointA, pointB, _attackContactFilter, _attackOverlapResults);
 
             for (int i = 0; i < hitCount; i++)
             {
-                m_LastHit = m_AttackOverlapResults[i];
-                Damageable damageable = m_LastHit.GetComponent<Damageable>();
+                _lastHit = _attackOverlapResults[i];
+                Damageable damageable = _lastHit.GetComponent<Damageable>();
 
                 if (damageable)
                 {

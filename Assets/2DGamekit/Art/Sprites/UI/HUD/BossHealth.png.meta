@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 2a305122cc204a041804db2417ad3ac2
-timeCreated: 1515083922
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: BossHealth_DefaultBorder
@@ -14,7 +12,7 @@ TextureImporter:
     21300014: BossHealth_HighlightedBorder
     21300016: BossHealth_SmashedBorder
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -32,6 +30,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -42,7 +42,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -54,18 +54,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -75,7 +78,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -85,7 +89,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -132,6 +137,12 @@ TextureImporter:
         - {x: 209, y: 10}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c9f78cad9e256bd41b5495e2399a113f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_Handle
       rect:
@@ -150,6 +161,12 @@ TextureImporter:
         - {x: 2.5, y: 20.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5943da90253905f41af0eddda0314a74
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_Fill
       rect:
@@ -168,6 +185,12 @@ TextureImporter:
         - {x: 16, y: 23.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c0714dfacf125174abe2e1d0ee3e92ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_SphereFill
       rect:
@@ -188,6 +211,12 @@ TextureImporter:
         - {x: 69.5, y: 94.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0a5a3e48e985dc14691da3b870a870bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_Damaged
       rect:
@@ -220,6 +249,12 @@ TextureImporter:
         - {x: 38, y: 64}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cde9344a82d8fc440b0329d7dbf84024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_DamageSpark
       rect:
@@ -242,6 +277,12 @@ TextureImporter:
         - {x: 172, y: 80}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c0c59135fc9253b438c88d5bca85819a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_HandleFlash
       rect:
@@ -261,6 +302,12 @@ TextureImporter:
         - {x: 9, y: 114}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 19b654e5fd4d58e4db219f205367ff86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_HighlightedBorder
       rect:
@@ -295,6 +342,12 @@ TextureImporter:
         - {x: 308.5, y: -5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 741d03fc14c1fc349b9561bd40e9bd0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BossHealth_SmashedBorder
       rect:
@@ -654,9 +707,23 @@ TextureImporter:
         - {x: 326.5, y: 143.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2c91d01d1c37d8d4da826e99b1631f2e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

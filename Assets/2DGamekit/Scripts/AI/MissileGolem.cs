@@ -69,8 +69,8 @@ public class MissileGolem : MonoBehaviour
     bool onFloor = false;
     int round = 0;
 
-    private int m_TotalHealth = 0;
-    private int m_CurrentHealth = 0;
+    private float m_TotalHealth = 0;
+    private float m_CurrentHealth = 0;
 
     //used to track target movement, to correct for it.
     private Vector2 m_PreviousTargetPosition;
@@ -185,7 +185,7 @@ public class MissileGolem : MonoBehaviour
         }
     }
 
-    void PlayerDied(Damager damager, Damageable damageable)
+    void PlayerDied(Damager d, Damageable da)
     {
         BackgroundMusicPlayer.Instance.PushClip(playerDeathClip);
     }
@@ -361,7 +361,7 @@ public class MissileGolem : MonoBehaviour
     {
         takingDamage.PlayRandomSound();
 
-        m_CurrentHealth -= damager.damage;
+        m_CurrentHealth -= damager.Damage;
         healthSlider.value = m_CurrentHealth;
     }
 

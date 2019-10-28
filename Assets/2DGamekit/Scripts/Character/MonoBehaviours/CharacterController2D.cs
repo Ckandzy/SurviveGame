@@ -15,7 +15,6 @@ namespace Gamekit2D
 
         Rigidbody2D m_Rigidbody2D;
         CapsuleCollider2D m_Capsule;
-        BoxCollider2D m_BoxCollider2D;
         Vector2 m_PreviousPosition;
         Vector2 m_CurrentPosition;
         Vector2 m_NextMovement;
@@ -41,7 +40,7 @@ namespace Gamekit2D
 
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
             m_Capsule = GetComponent<CapsuleCollider2D>();
-            m_BoxCollider2D = GetComponent<BoxCollider2D>();
+
             m_CurrentPosition = m_Rigidbody2D.position;
             m_PreviousPosition = m_Rigidbody2D.position;
 
@@ -101,24 +100,25 @@ namespace Gamekit2D
             {
                 if (GetComponent<BoxCollider2D>())
                 {
-                    raycastStart = m_Rigidbody2D.position + m_BoxCollider2D.offset;
-                    raycastDistance = m_BoxCollider2D.size.y * 0.5f + groundedRaycastDistance;
+                    Bounds bounds = GetComponent<BoxCollider2D>().bounds;
+                    raycastStart = m_Rigidbody2D.position + Vector2.up * bounds.extents.y;
+                    raycastDistance = bounds.extents.y + groundedRaycastDistance;
 
                     if (bottom)
                     {
                         raycastDirection = Vector2.down;
 
-                        m_RaycastPositions[0] = raycastStart + Vector2.left * m_BoxCollider2D.size.x * 0.5f;
+                        m_RaycastPositions[0] = raycastStart + Vector2.left * bounds.extents.x;
                         m_RaycastPositions[1] = raycastStart;
-                        m_RaycastPositions[2] = raycastStart + Vector2.right * m_BoxCollider2D.size.x * 0.5f;
+                        m_RaycastPositions[2] = raycastStart + Vector2.right * bounds.extents.x;
                     }
                     else
                     {
                         raycastDirection = Vector2.up;
 
-                        m_RaycastPositions[0] = raycastStart + Vector2.left * m_BoxCollider2D.size.x * 0.5f;
+                        m_RaycastPositions[0] = raycastStart + Vector2.left * bounds.extents.x;
                         m_RaycastPositions[1] = raycastStart;
-                        m_RaycastPositions[2] = raycastStart + Vector2.right * m_BoxCollider2D.size.x * 0.5f;
+                        m_RaycastPositions[2] = raycastStart + Vector2.right * bounds.extents.x;
                     }
                 }
                 else
@@ -149,7 +149,7 @@ namespace Gamekit2D
                 raycastStart = m_Rigidbody2D.position + m_Capsule.offset;
                 //Debug.Log(raycastStart);
                 raycastDistance = m_Capsule.size.x * 0.5f + groundedRaycastDistance * 2f;
- 
+
                 if (bottom)
                 {
                     raycastDirection = Vector2.down;

@@ -44,7 +44,7 @@ Physics2DSettings:
   m_CallbacksOnDisable: 1
   m_ReuseCollisionCallbacks: 0
   m_AutoSyncTransforms: 1
-  m_AlwaysShowColliders: 1
+  m_AlwaysShowColliders: 0
   m_ShowColliderSleep: 1
   m_ShowColliderContacts: 0
   m_ShowColliderAABB: 0
@@ -53,4 +53,4 @@ Physics2DSettings:
   m_ColliderAsleepColor: {r: 0.5686275, g: 0.95686275, b: 0.54509807, a: 0.36078432}
   m_ColliderContactColor: {r: 1, g: 0, b: 1, a: 0.6862745}
   m_ColliderAABBColor: {r: 1, g: 1, b: 0, a: 0.2509804}
-  m_LayerCollisionMatrix: c828cc1fc800cc1fdcbfcdffffffffffdcbfcdffc8008c1fffffffffffffffffdcbfdddfdc9d8dffdcbf8dffddb78dffdc8fcdffddadafffc840cc1fdcbf8dffdcbfcfffc8208dbfffff8fffffff8fffc80180bfc820801fdf5181bfffffffffffffffffffffffffffffffffffffffffffffffffdcbedfdfdcbf8d7fdcbfdfbf
+  m_LayerCollisionMatrix: c8284c1ec8004c1edcbf4dfeffffffffdcbf4dfec8000c1effffffffffffffffdcbf5ddedc9d0dffdcbf0dfeddb70dfedc8f4dfeddad2fffc8404c1edcbf0dfedcbf4ffec8200dbeffff0ffeffff0fffc80100bec820001edf5101bec800009ec82208ffffffffffffffffffffffffffffffffffdcbe5fdfdcbf0d7fdcbfdfbf

@@ -127,7 +127,7 @@ public class Enemy : PoolObject<EnemySpawner, Enemy, Vector2>
         enemyBehaviour.SetMoveVector(Vector2.zero);
         instance.transform.position = info;
         instance.SetActive(true);
-        damageable.SetHealth(damageable.startingHealth);
+        damageable.SetHealth(damageable.MaxHealth);
         damageable.DisableInvulnerability();
         enemyBehaviour.contactDamager.EnableDamage();
         SceneLinkedSMB<EnemyBehaviour>.Initialise(enemyBehaviour.GetComponent<Animator>(), enemyBehaviour);

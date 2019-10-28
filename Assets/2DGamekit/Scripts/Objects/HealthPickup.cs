@@ -14,12 +14,12 @@ namespace Gamekit2D
         {
             if(other.gameObject == PlayerCharacter.PlayerInstance.gameObject)
             {
-                //Damageable damageable = PlayerCharacter.PlayerInstance.damageable;
-                //if (damageable.CurrentHealth < damageable.startingHealth)
-                //{
-                 //   damageable.GainHealth(Mathf.Min(healthAmount, damageable.startingHealth - damageable.CurrentHealth));
-                 //   OnGivingHealth.Invoke();
-                //}
+                Damageable damageable = PlayerCharacter.PlayerInstance.damageable;
+                if (damageable.CurrentHealth < damageable.MaxHealth)
+                {
+                    damageable.GainHealth(Mathf.Min(healthAmount, damageable.MaxHealth - damageable.CurrentHealth));
+                    OnGivingHealth.Invoke();
+                }
             }
         }
     }

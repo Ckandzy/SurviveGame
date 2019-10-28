@@ -24,8 +24,8 @@ namespace Gamekit2D
 
         void OnEnable ()
         {
-            //RequiresConstantRepaint();
-            m_DamageProp = serializedObject.FindProperty ("damage");
+            RequiresConstantRepaint();
+            m_DamageProp = serializedObject.FindProperty ("_damage");
             m_OffsetProp = serializedObject.FindProperty("offset");
             m_SizeProp = serializedObject.FindProperty("size");
             m_OffsetBasedOnSpriteFacingProp = serializedObject.FindProperty("offsetBasedOnSpriteFacing");
@@ -41,7 +41,6 @@ namespace Gamekit2D
         public override void OnInspectorGUI ()
         {
             serializedObject.Update();
-
             EditorGUILayout.PropertyField(m_DamageProp);
             EditorGUILayout.PropertyField(m_OffsetProp);
             EditorGUILayout.PropertyField(m_SizeProp);
@@ -53,7 +52,7 @@ namespace Gamekit2D
             EditorGUILayout.PropertyField(m_IgnoreInvincibilityProp);
             EditorGUILayout.PropertyField(m_HittableLayersProp);
             EditorGUILayout.PropertyField(m_OnDamageableHitProp);
-            EditorGUILayout.PropertyField(m_OnNonDamageableHitProp);           
+            EditorGUILayout.PropertyField(m_OnNonDamageableHitProp);
 
             serializedObject.ApplyModifiedProperties();
         }

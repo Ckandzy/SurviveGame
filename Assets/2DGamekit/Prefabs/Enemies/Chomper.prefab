@@ -106,7 +106,8 @@ AudioSource:
   m_GameObject: {fileID: 1377574326371212}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243686457154912612, guid: 74cb2eead3628fa47a369c51a45d99a1,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -317,7 +318,8 @@ AudioSource:
   m_GameObject: {fileID: 1488465277548264}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243686457154912612, guid: 74cb2eead3628fa47a369c51a45d99a1,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -462,7 +464,8 @@ AudioSource:
   m_GameObject: {fileID: 1650936757006982}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243686457154912612, guid: 74cb2eead3628fa47a369c51a45d99a1,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -717,7 +720,8 @@ AudioSource:
   m_GameObject: {fileID: 1757559929333382}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243686457154912612, guid: 74cb2eead3628fa47a369c51a45d99a1,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1043,11 +1047,12 @@ MonoBehaviour:
   speed: 1
   gravity: 10
   projectilePrefab: {fileID: 0}
+  sightType: 1
+  offset: {x: 1.5, y: 1}
+  size: {x: 2.5, y: 1}
   viewDirection: 0
   viewFov: 360
   viewDistance: 5
-  isDoubleSide: 0
-  rayDistance: 0
   timeBeforeTargetLost: 2
   meleeRange: 2
   meleeDamager: {fileID: 114303490521682168}
@@ -1055,21 +1060,16 @@ MonoBehaviour:
   attackDash: 1
   attackForce: {x: 4, y: 2}
   shootingOrigin: {fileID: 0}
-  AttackLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
+  launchMode: 1
   launchSpeed: 20
-  trackSensitivity: 0.1
-  launchAngle: 45
+  shootAngle: 45
+  shootForce: 100
   fireRate: 2
-  LaunchAudio: {fileID: 0}
+  shootingAudio: {fileID: 0}
   meleeAttackAudio: {fileID: 114843360001791158}
   dieAudio: {fileID: 114414923324972550}
   footStepAudio: {fileID: 114132390200130364}
   flickeringDuration: 0.02
-  LaunchTracked: 0
-  m_Target: {fileID: 0}
-  m_FireTimer: 0
   m_SpriteForward: {x: 0, y: 0}
 --- !u!114 &114412267516478162
 MonoBehaviour:

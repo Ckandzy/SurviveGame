@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 76465a0a33addfa4686beca3ade8fc17
-timeCreated: 1512061211
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: Clouds_0
@@ -19,7 +17,7 @@ TextureImporter:
     21300024: Clouds_17
     21300026: Clouds_8
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -37,6 +35,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -47,7 +47,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: -1
     wrapW: -1
@@ -59,18 +59,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -80,7 +83,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -90,7 +94,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,6 +128,12 @@ TextureImporter:
         - {x: 1276.5, y: 61}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a8820be7ce98cde42b456b7a9d1f7837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_4
       rect:
@@ -145,6 +156,12 @@ TextureImporter:
         - {x: -40.749985, y: 204.5685}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d98aff897dcbff7468229339801e4bdb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_5
       rect:
@@ -168,6 +185,12 @@ TextureImporter:
         - {x: 449.5, y: 107.79487}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 1af1f275b693ab44d9032b093f52a78c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_6
       rect:
@@ -192,6 +215,12 @@ TextureImporter:
         - {x: 370.5, y: 181}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fc6a33e4fc1ede2458c208d473a048d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_9
       rect:
@@ -242,6 +271,12 @@ TextureImporter:
         - {x: -79.74994, y: 11.094505}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4362b90c80583ff469c06b1c97628479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_16
       rect:
@@ -265,6 +300,12 @@ TextureImporter:
         - {x: 295.00003, y: 49.201466}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 9bc8f24693d2a8849a5e0c566b792d53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_15
       rect:
@@ -290,6 +331,12 @@ TextureImporter:
         - {x: 877, y: -19.814651}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 29bf5042466800a4eb8cb944ed0847d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_7
       rect:
@@ -313,6 +360,12 @@ TextureImporter:
         - {x: 78.75, y: 56.266666}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0f38b40842df7ed4c8092135c667a5c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Clouds_8
       rect:
@@ -336,9 +389,23 @@ TextureImporter:
         - {x: 437.50012, y: 211.32234}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ed4c5aa739a73f447b9fb7c9155eb169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

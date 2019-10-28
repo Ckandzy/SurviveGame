@@ -7,17 +7,17 @@ namespace Gamekit2D
     public class Damageable : MonoBehaviour, IDataPersister
     {
         [Serializable]
-        public class HealthEvent : UnityEvent<Damageable> { }
+        public class HealthEvent : UnityEvent<Damageable>
+        { }
 
         [Serializable]
-        public class DamageEvent : UnityEvent<Damager, Damageable>{ }
-        
+        public class DamageEvent : UnityEvent<Damager, Damageable>
+        { }
 
         [Serializable]
-        public class HealEvent : UnityEvent<int, Damageable> { }
-       
+        public class HealEvent : UnityEvent<float, Damageable>
+        { }
 
-        public int startingHealth = 5;
         [Tooltip("当收到伤害时无敌")]
         public bool invulnerableAfterDamage = true;
         [Tooltip("无敌效果持续时间")]
@@ -32,21 +32,57 @@ namespace Gamekit2D
         [HideInInspector]
         public DataSettings dataSettings;
 
-        protected bool m_Invulnerable;
-        protected float m_InulnerabilityTimer;
-        protected int m_CurrentHealth;
-        protected Vector2 m_DamageDirection;
-        protected bool m_ResetHealthOnSceneReload;
+        protected bool _invulnerable;
+        protected float _inulnerabilityTimer;
+        protected Vector2 _damageDirection;
+        protected bool _resetHealthOnSceneReload;
 
-        public int CurrentHealth
+        protected Character _character;
+
+#if UNITY_EDITOR
+        [SerializeField]
+#endif
+        protected float _maxHealth;
+#if UNITY_EDITOR
+        [SerializeField]
+#endif
+        protected float _currentHealth;
+
+        public float CurrentHealth
         {
-            get { return m_CurrentHealth; }
+            get
+            {
+                if (_character != null)
+                    _currentHealth = _character.health.CurValue;
+                return _currentHealth;
+            }
+        }
+
+        public float MaxHealth
+        {
+            get
+            {
+                if (_character != null)
+                    _maxHealth =  _character.health.MaxValue;
+                return _maxHealth;
+            }
+        }
+
+        private void OnValidate()
+        {
+            if (_character == null)
+                _character = GetComponent<Character>();
+        }
+
+        private void Awake()
+        {
+            _character = GetComponent<Character>();
         }
 
         void OnEnable()
         {
             PersistentDataManager.RegisterPersister(this);
-            m_CurrentHealth = startingHealth;
+            _currentHealth = MaxHealth;
 
             OnHealthSet.Invoke(this);
 
@@ -60,13 +96,13 @@ namespace Gamekit2D
 
         void Update()
         {
-            if (m_Invulnerable)
+            if (_invulnerable)
             {
-                m_InulnerabilityTimer -= Time.deltaTime;
+                _inulnerabilityTimer -= Time.deltaTime;
 
-                if (m_InulnerabilityTimer <= 0f)
+                if (_inulnerabilityTimer <= 0f)
                 {
-                    m_Invulnerable = false;
+                    _invulnerable = false;
                 }
             }
         }
@@ -77,9 +113,9 @@ namespace Gamekit2D
         /// <param 是否忽略无敌时间="ignoreTimer"></param>
         public void EnableInvulnerability(bool ignoreTimer = false)
         {
-            m_Invulnerable = true;
+            _invulnerable = true;
             //technically don't ignore timer, just set it to an insanly big number. Allow to avoid to add more test & special case.
-            m_InulnerabilityTimer = ignoreTimer ? float.MaxValue : invulnerabilityDuration;
+            _inulnerabilityTimer = ignoreTimer ? float.MaxValue : invulnerabilityDuration;
         }
 
         /// <summary>
@@ -87,12 +123,12 @@ namespace Gamekit2D
         /// </summary>
         public void DisableInvulnerability()
         {
-            m_Invulnerable = false;
+            _invulnerable = false;
         }
 
         public Vector2 GetDamageDirection()
         {
-            return m_DamageDirection;
+            return _damageDirection;
         }
 
         /// <summary>
@@ -102,25 +138,25 @@ namespace Gamekit2D
         /// <param name="ignoreInvincible"></param>
         public void TakeDamage(Damager damager, bool ignoreInvincible = false)
         {
-            if ((m_Invulnerable && !ignoreInvincible) || m_CurrentHealth <= 0)
+            if ((_invulnerable && !ignoreInvincible) || _currentHealth <= 0)
                 return;
 
             //we can reach that point if the damager was one that was ignoring invincible state.
             //We still want the callback that we were hit, but not the damage to be removed from health.
-            if (!m_Invulnerable)
+            if (!_invulnerable)
             {
-                m_CurrentHealth -= damager.damage;
+                _currentHealth -= damager.Damage;
                 OnHealthSet.Invoke(this);
             }
 
-            m_DamageDirection = transform.position + (Vector3)centreOffset - damager.transform.position;
+            _damageDirection = transform.position + (Vector3)centreOffset - damager.transform.position;
 
             OnTakeDamage.Invoke(damager, this);
 
-            if (m_CurrentHealth <= 0)
+            if (_currentHealth <= 0)
             {
                 OnDie.Invoke(damager, this);
-                m_ResetHealthOnSceneReload = true;
+                _resetHealthOnSceneReload = true;
                 EnableInvulnerability();
                 if (disableOnDeath) gameObject.SetActive(false);
             }
@@ -130,12 +166,12 @@ namespace Gamekit2D
         /// 增加生命
         /// </summary>
         /// <param name="amount"></param>
-        public void GainHealth(int amount)
+        public void GainHealth(float amount)
         {
-            m_CurrentHealth += amount;
+            _currentHealth += amount;
 
-            if (m_CurrentHealth > startingHealth)
-                m_CurrentHealth = startingHealth;
+            if (_currentHealth > MaxHealth)
+                _currentHealth = MaxHealth;
 
             OnHealthSet.Invoke(this);
 
@@ -146,9 +182,9 @@ namespace Gamekit2D
         /// 设置生命
         /// </summary>
         /// <param name="amount"></param>
-        public void SetHealth(int amount)
+        public void SetHealth(float amount)
         {
-            m_CurrentHealth = amount;
+            _currentHealth = amount;
 
             OnHealthSet.Invoke(this);
         }
@@ -166,14 +202,14 @@ namespace Gamekit2D
 
         public Data SaveData()
         {
-            return new Data<int, bool>(CurrentHealth, m_ResetHealthOnSceneReload);
+            return new Data<float, bool>(CurrentHealth, _resetHealthOnSceneReload);
         }
 
         public void LoadData(Data data)
         {
-            Data<int, bool> healthData = (Data<int, bool>)data;
+            Data<float, bool> healthData = (Data<float, bool>)data;
             //如果m_ResetHealthOnSceneReload为真则重置生命为初始值，否则读取存储值
-            m_CurrentHealth = healthData.value1 ? startingHealth : healthData.value0;
+            _currentHealth = healthData.value1 ? MaxHealth : healthData.value0;
             OnHealthSet.Invoke(this);
         }
 

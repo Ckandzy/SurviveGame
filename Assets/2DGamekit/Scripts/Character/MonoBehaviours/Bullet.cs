@@ -41,6 +41,7 @@ namespace Gamekit2D
             if (destroyWhenOutOfView)
             {
                 Vector3 screenPoint = mainCamera.WorldToViewportPoint(transform.position);
+                //Debug.Log(transform.position + " " + screenPoint);
                 bool onScreen = screenPoint.z > 0 && screenPoint.x > -k_OffScreenError &&
                                 screenPoint.x < 1 + k_OffScreenError && screenPoint.y > -k_OffScreenError &&
                                 screenPoint.y < 1 + k_OffScreenError;

@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 14ad88aa05b531d40bb7667bf21651eb
-timeCreated: 1512060940
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: LowerPlants6_0
@@ -11,7 +9,7 @@ TextureImporter:
     21300008: LowerPlants6_4
     21300010: LowerPlants6_5
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -29,6 +27,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -39,7 +39,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: -1
@@ -51,18 +51,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -72,7 +75,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -82,7 +86,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -115,6 +120,12 @@ TextureImporter:
         - {x: 523, y: 220.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ba00dfb85d0423244bd025909c0f48a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants6_1
       rect:
@@ -138,6 +149,12 @@ TextureImporter:
         - {x: 198.5, y: 84}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6ef6e6d4d4b8f214d9bc4fd2c236a052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants6_2
       rect:
@@ -159,6 +176,12 @@ TextureImporter:
         - {x: 106.5, y: 265}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 60e31065770bafe4792786a3a801e2ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants6_3
       rect:
@@ -179,6 +202,12 @@ TextureImporter:
         - {x: 78.5, y: 280}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6566ed22b409dec42a73b9183541e7fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants6_4
       rect:
@@ -203,6 +232,12 @@ TextureImporter:
         - {x: 256, y: 99.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4a5a64cca369d06429a7b6d4cf77d559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants6_5
       rect:
@@ -223,9 +258,23 @@ TextureImporter:
         - {x: 90, y: 242.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e93420bcb3e37664baa30e007e30b56b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

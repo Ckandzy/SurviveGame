@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 44c1b3b37217c0b4bb07a979fc3b4714
-timeCreated: 1511279627
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: SpikesNew_0
@@ -24,7 +22,7 @@ TextureImporter:
     21300034: SpikesNew_18
     21300036: SpikesNew_19
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -42,6 +40,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -52,7 +52,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: -1
@@ -64,18 +64,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -85,7 +88,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -95,7 +99,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -163,6 +168,12 @@ TextureImporter:
         - {x: 148, y: -56.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cfa8ce82c60d9434da3b7acf73eb2c29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_1
       rect:
@@ -203,6 +214,12 @@ TextureImporter:
         - {x: -38.5, y: -100.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2b0f3d71a4dc4654cb410ffa16df5235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_4
       rect:
@@ -252,6 +269,12 @@ TextureImporter:
         - {x: 49.5, y: -78.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e2fc8469ab82504ba6391ce041b79fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_5
       rect:
@@ -312,6 +335,12 @@ TextureImporter:
         - {x: -18.5, y: -44.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 704e360dbd54db14f8d4b71942aeb5bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_8
       rect:
@@ -354,6 +383,12 @@ TextureImporter:
         - {x: 138.5, y: 110.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 718bf47b37d630e4caecddad009b5a71
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_10
       rect:
@@ -391,6 +426,12 @@ TextureImporter:
         - {x: 124.5, y: 15}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2bef609fd3d4db24a8904dc8dd7905c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_11
       rect:
@@ -438,6 +479,12 @@ TextureImporter:
         - {x: 50, y: -95.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f1f1e60991ea8224f81baa467aa45d42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_13
       rect:
@@ -530,6 +577,12 @@ TextureImporter:
         - {x: -49, y: 71}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5c68bb63b0934d14faf2f83db22ff68a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_14
       rect:
@@ -588,6 +641,12 @@ TextureImporter:
         - {x: -57, y: -91}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ac3ca9f3b3dd86243b87f52eda035601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_15
       rect:
@@ -636,6 +695,12 @@ TextureImporter:
         - {x: 141, y: -79.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 882ac0b63ec5d824eb0c6c4b0d9d3f2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_16
       rect:
@@ -697,6 +762,12 @@ TextureImporter:
         - {x: -38.5, y: -35.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f17e3216ff8dc1d49a22c838cc518f2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_17
       rect:
@@ -752,6 +823,12 @@ TextureImporter:
         - {x: 78.5, y: -103}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: edde1e2e043371d4ebb29f6433330543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_18
       rect:
@@ -794,6 +871,12 @@ TextureImporter:
         - {x: 60.5, y: 91}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5d79518f487d5ce44a0604dd863fb34c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: SpikesNew_19
       rect:
@@ -841,9 +924,23 @@ TextureImporter:
         - {x: 19, y: -16}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 449c68d084f5487448c397ab7f1cac17
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -40,10 +40,10 @@ namespace Gamekit2D
             if (Physics2D.Raycast(testPosition, direction, PlayerCharacter.PlayerInstance.m_CharacterController2D.ContactFilter, results, distance) > 0)
                 return;
 
-            //BulletObject bullet = PlayerCharacter.PlayerInstance.bulletPool.Pop(PlayerCharacter.PlayerInstance.m_CurrentBulletSpawnPoint.position);
-            //bool facingLeft = PlayerCharacter.PlayerInstance.m_CurrentBulletSpawnPoint == PlayerCharacter.PlayerInstance.facingLeftBulletSpawnPoint;
-           // bullet.rigidbody2D.velocity = new Vector2(facingLeft ? -PlayerCharacter.PlayerInstance.bulletSpeed : PlayerCharacter.PlayerInstance.bulletSpeed, 0f);
-           // bullet.spriteRenderer.flipX = facingLeft ^ bullet.bullet.spriteOriginallyFacesLeft;
+            BulletObject bullet = PlayerCharacter.PlayerInstance.bulletPool.Pop(PlayerCharacter.PlayerInstance.m_CurrentBulletSpawnPoint.position);
+            bool facingLeft = PlayerCharacter.PlayerInstance.m_CurrentBulletSpawnPoint == PlayerCharacter.PlayerInstance.facingLeftBulletSpawnPoint;
+            bullet.rigidbody2D.velocity = new Vector2(facingLeft ? -PlayerCharacter.PlayerInstance.bulletSpeed : PlayerCharacter.PlayerInstance.bulletSpeed, 0f);
+            bullet.spriteRenderer.flipX = facingLeft ^ bullet.bullet.spriteOriginallyFacesLeft;
 
             PlayerCharacter.PlayerInstance.rangedAttackAudioPlayer.PlayRandomSound();
         }

@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 47b428b699457b74992fad3070540648
-timeCreated: 1512060128
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: LowerPlants1_0
@@ -23,7 +21,7 @@ TextureImporter:
     21300032: LowerPlants1_26
     21300034: LowerPlants1_29
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -41,6 +39,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -51,7 +51,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: -1
@@ -63,18 +63,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -84,7 +87,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -94,7 +98,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -138,6 +143,12 @@ TextureImporter:
         - {x: -75, y: -118.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: eddcfd4483738a748abbbf69fed97a79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_2
       rect:
@@ -163,6 +174,12 @@ TextureImporter:
         - {x: -9, y: -115}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cdd7e4258190481458c12a1e2c1dc6a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_3
       rect:
@@ -196,6 +213,12 @@ TextureImporter:
         - {x: 331, y: -138}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d9901f596da6aa74caaa0c6603616c7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_6
       rect:
@@ -223,6 +246,12 @@ TextureImporter:
         - {x: -232, y: -163}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: aca6138ad0b57be459c8eb33dddee3b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_7
       rect:
@@ -252,6 +281,12 @@ TextureImporter:
         - {x: 231.5, y: -62}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c31ef9b0bb6e71c48ae99527cb2bf81d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_9
       rect:
@@ -275,6 +310,12 @@ TextureImporter:
         - {x: 33.5, y: 43}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: dfd3ab8298b861f418338c4492f5d1dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_10
       rect:
@@ -305,6 +346,12 @@ TextureImporter:
         - {x: 106, y: 54}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06682da9ecf06214ba4f141b8619731f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_11
       rect:
@@ -326,6 +373,12 @@ TextureImporter:
         - {x: -24.5, y: 25}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 34ce772671bb7084695a301c5e0c5d41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_12
       rect:
@@ -348,6 +401,12 @@ TextureImporter:
         - {x: 16, y: 44.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 877011294e5f5ca4bb0956038821576f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_16
       rect:
@@ -368,6 +427,12 @@ TextureImporter:
         - {x: -159.5, y: -93}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 554aa65107c2eeb46b6f9c8af1a8e6bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_17
       rect:
@@ -390,6 +455,12 @@ TextureImporter:
         - {x: 152.5, y: 16.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6e6b8c12b31e6747baa7d135b3f0dbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_18
       rect:
@@ -420,6 +491,12 @@ TextureImporter:
         - {x: -217.5, y: -195}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: d9d9baaa9fcd3d34b8c784a603196e05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_20
       rect:
@@ -443,6 +520,12 @@ TextureImporter:
         - {x: 457.38928, y: -200.43567}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a871240a17b91ef45967ab002fd76e20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_21
       rect:
@@ -472,6 +555,12 @@ TextureImporter:
         - {x: 136.5, y: 30}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 090cc87da19a51b47a27dea612a7c045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_22
       rect:
@@ -506,6 +595,12 @@ TextureImporter:
         - {x: 162.5, y: 80}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 4559712b63506f641aaece3d6ce6e173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_24
       rect:
@@ -526,6 +621,12 @@ TextureImporter:
         - {x: -20, y: -108.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0af12bf2490050f40b48073dd4a01c36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_26
       rect:
@@ -556,6 +657,12 @@ TextureImporter:
         - {x: -486, y: -174}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: cd217e8a5d00f1d48a3ecbe7737818d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: LowerPlants1_29
       rect:
@@ -579,9 +686,23 @@ TextureImporter:
         - {x: 387, y: 98}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e339d080accf61049bb08a9ae5f53e10
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

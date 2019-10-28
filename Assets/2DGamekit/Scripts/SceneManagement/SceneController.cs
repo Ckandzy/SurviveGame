@@ -81,7 +81,7 @@ namespace Gamekit2D
         {
             if(resetHealth && PlayerCharacter.PlayerInstance != null)
             {
-                //PlayerCharacter.PlayerInstance.damageable.SetHealth(PlayerCharacter.PlayerInstance.damageable.startingHealth);
+                PlayerCharacter.PlayerInstance.damageable.SetHealth(PlayerCharacter.PlayerInstance.damageable.MaxHealth);
             }
 
             Instance.StartCoroutine(Instance.Transition(Instance.m_CurrentZoneScene.name, true, Instance.m_ZoneRestartDestinationTag, TransitionPoint.TransitionType.DifferentZone));
@@ -110,7 +110,7 @@ namespace Gamekit2D
             if (m_PlayerInput == null)
                 m_PlayerInput = FindObjectOfType<PlayerInput>();
             m_PlayerInput.ReleaseControl(resetInputValues);
-            yield return StartCoroutine(ScreenFader.FadeSceneOut(/*ScreenFader.FadeType.Loading*/));
+            yield return StartCoroutine(ScreenFader.FadeSceneOut(ScreenFader.FadeType.Loading));
             PersistentDataManager.ClearPersisters();
             yield return SceneManager.LoadSceneAsync(newSceneName);
             m_PlayerInput = FindObjectOfType<PlayerInput>();

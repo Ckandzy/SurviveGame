@@ -456,7 +456,7 @@ namespace BTAI
 
         void PickNewChild()
         {
-            int choice = Random.Range(0, m_AddedWeight[m_AddedWeight.Length - 1] + 1);
+            int choice = Random.Range(0, m_AddedWeight[m_AddedWeight.Length - 1]);
 
             for (int i = 0; i < m_AddedWeight.Length; ++i)
             {

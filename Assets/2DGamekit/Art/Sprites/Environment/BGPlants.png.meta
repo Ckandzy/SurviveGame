@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 776d10e19ab11c44a8271fc18a42ab83
-timeCreated: 1512061542
-licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: BGPlants_0
@@ -29,7 +27,7 @@ TextureImporter:
     21300044: BGPlants_19
     21300046: BGPlants_21
   externalObjects: {}
-  serializedVersion: 4
+  serializedVersion: 9
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -47,6 +45,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -57,7 +57,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 2
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -69,18 +69,21 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -90,7 +93,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Standalone
+  - serializedVersion: 2
+    buildTarget: Standalone
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -100,7 +104,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
+  - serializedVersion: 2
+    buildTarget: Android
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
@@ -162,6 +167,12 @@ TextureImporter:
         - {x: 79, y: -123.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 2024d3d114239af4eab876ac11ab1bbe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_1
       rect:
@@ -200,6 +211,12 @@ TextureImporter:
         - {x: 98.5, y: 24}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 152c7eb523f50454da12e03e1458ed2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_2
       rect:
@@ -240,6 +257,12 @@ TextureImporter:
         - {x: 199.5, y: 42.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06b157cf7f5abff4b92a4c6d24c9aa96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_3
       rect:
@@ -264,6 +287,12 @@ TextureImporter:
         - {x: 85.5, y: 22}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: aeec4b104fd98d14eaddcb528e880623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_4
       rect:
@@ -285,6 +314,12 @@ TextureImporter:
         - {x: 93, y: -34.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b3d1654233448974db1c1b7ea15dc8ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_5
       rect:
@@ -305,6 +340,12 @@ TextureImporter:
         - {x: 35.5, y: 22}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b1594fe501285b7498fb6201bf924eb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_6
       rect:
@@ -325,6 +366,12 @@ TextureImporter:
         - {x: 33, y: 19}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fe74a5b2b16eae144b949f7c3cd919b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_9
       rect:
@@ -348,6 +395,12 @@ TextureImporter:
         - {x: 40, y: 80.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 512417e5795c85b4781a550e79b4abd6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_10
       rect:
@@ -383,6 +436,12 @@ TextureImporter:
         - {x: 106, y: -14}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4fc198b31702784c9050e49a89293ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_14
       rect:
@@ -416,6 +475,12 @@ TextureImporter:
         - {x: 35.5, y: -90.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 0e1ac9e689aef1d4d966940fdcf583c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_15
       rect:
@@ -442,6 +507,12 @@ TextureImporter:
         - {x: 102.5, y: 64.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 6758c4f259a13874f9bdf5ed23bf7d14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_18
       rect:
@@ -469,6 +540,12 @@ TextureImporter:
         - {x: 74, y: 12}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f42cada5c26e4974a97bc723e9eedafd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_20
       rect:
@@ -501,6 +578,12 @@ TextureImporter:
         - {x: 111.5, y: 133.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a9ac19a0fc7b1da4cb34a37dfefb25d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_21
       rect:
@@ -525,6 +608,12 @@ TextureImporter:
         - {x: 3.5, y: 158.5}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: f677cabc77ef46545982c2c84c4f48d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_22
       rect:
@@ -551,6 +640,12 @@ TextureImporter:
         - {x: 98, y: 55}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: ab61e6e2956614e498807533d333b215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_23
       rect:
@@ -581,6 +676,12 @@ TextureImporter:
         - {x: 38.5, y: 26}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: fcd0bd48d6c372f44bc82492db4c0ec4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_24
       rect:
@@ -607,6 +708,12 @@ TextureImporter:
         - {x: 56, y: 92}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 09c57ec5fc8e797468cbc3b02969ac6f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_25
       rect:
@@ -629,6 +736,12 @@ TextureImporter:
         - {x: 75, y: 74}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 5e9a80b112b74f64c9e94b7bf4eff578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: BGPlants_26
       rect:
@@ -650,9 +763,23 @@ TextureImporter:
         - {x: 54, y: 69}
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: b146e7e45b23b784a9171974fb770ccb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
+    bones: []
+    spriteID: 
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

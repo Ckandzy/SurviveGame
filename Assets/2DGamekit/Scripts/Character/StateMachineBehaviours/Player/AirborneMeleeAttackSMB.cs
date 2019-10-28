@@ -8,12 +8,12 @@ namespace Gamekit2D
     {
         public override void OnSLStateEnter (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            //m_MonoBehaviour.ForceNotHoldingGun();
+            m_MonoBehaviour.ForceNotHoldingGun();
         }
 
         public override void OnSLStatePostEnter (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            //m_MonoBehaviour.EnableMeleeAttack();
+            m_MonoBehaviour.EnableMeleeAttack();
             if (m_MonoBehaviour.dashWhileAirborne)
                 m_MonoBehaviour.SetHorizontalMovement(m_MonoBehaviour.meleeAttackDashSpeed * m_MonoBehaviour.GetFacing());
         }
@@ -28,7 +28,7 @@ namespace Gamekit2D
 
         public override void OnSLStateExit (Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
-            //m_MonoBehaviour.DisableMeleeAttack();
+            m_MonoBehaviour.DisableMeleeAttack();
         }
     }
 }
